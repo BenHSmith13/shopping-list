@@ -1,0 +1,43 @@
+body.shoppinglist-popout-body {
+  margin: 0;
+  width: 800px;
+}
+
+.control-bar {
+  text-align: right;
+  border-bottom: 1px solid darkslategray;
+  padding: 0.25rem;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.shopping-list-header {
+  padding: 0.75rem 0.25rem;
+}
+
+.copy-to-clipboard-button {
+  float: right;
+  background-color: aquamarine;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.shopping-list-item {
+  padding: 0.25rem 0.5rem;
+}
+
+.shopping-list-item:hover {
+  background-color: lightgray;
+}

@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Shopping List",
+  "version": "0.0.1",
+  "description": "Make a shopping list",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": ""
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.walmart.com/*"],
+      "css": ["my-styles.css"],
+      "js": ["shared-content.js", "walmart-content.js"]
+    },
+    {
+      "matches": ["https://www.smithsfoodanddrug.com/*"],
+      "css": ["my-styles.css"],
+      "js": ["shared-content.js", "smiths-content.js"]
+    }
+  ],
+  "permissions": ["storage"]
+}
